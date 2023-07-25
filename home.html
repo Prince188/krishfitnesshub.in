@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Krish Fitness Hub</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        * {
+            box-sizing: border-box;
+            font-family:cursive;
+        }
+        
+
+        /* css reset */
+        body {
+            margin: 0px;
+            padding: 0px;
+            background: url('img/bg.jpg')no-repeat;
+            background-size: cover;
+            color: white;
+        }
+
+        .left {
+            /* border: 2px solid white; */
+            display: inline-block;
+            position: absolute;
+            left: 35px;
+            top: 20px;
+
+
+
+        }
+
+        .left img {
+            width: 137px;
+            height: 92px;
+            /* it converts black color into white and white colour into black   */
+            filter: invert(100%);
+            border-radius: 40%;
+            position: fixed;
+            left: 35px;
+            top: 4%;
+
+
+        }
+
+        .left div {
+            margin: 91px 4px;
+            position: fixed;
+            left: 35px;
+
+        }
+
+        .mid {
+            border: 2px solid white;
+            display: block;
+            width: 36%;
+            margin: 0px 33%;
+            background: #1a2328;
+            position: fixed;
+            top: 20px;
+
+
+        }
+
+        .navbar {
+            display: inline-block;
+        }
+
+        .navbar li {
+            display: inline-block;
+            font-size: 16px;
+        }
+
+        .navbar li a {
+            color: white;
+            text-decoration: none;
+            padding: 27px;
+
+        }
+
+        .navbar li a:hover,
+        .navbar li a.active {
+            color: rgb(217, 28, 28);
+            text-decoration: underline;
+
+        }
+
+        .right {
+
+            display: inline-block;
+            position: absolute;
+            right: 35px;
+            top: 20px;
+        }
+
+        .btn {
+            margin: 0px 15px;
+            background: #1a2328;
+            color: white;
+            padding: 18px 15px;
+            cursor: pointer;
+            border: 2px solid white;
+            border-radius: 18px;
+            text-decoration: none;
+        }
+
+        .btn a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .btn a:hover {
+
+            color: black;
+
+
+        }
+
+
+
+        .btn:hover {
+            background: aliceblue;
+            color: black;
+            border: 2px solid black;
+
+        }
+
+        .container {
+            /* border: 2px solid white; */
+            background-color: transparent;
+            margin: 200px 31px;
+            padding: 20px 20px;
+            width: 33%;
+        }
+
+        /* (sr) for submit and reset button */
+        .sr {
+            border: 2px solid white;
+            background-color: #1a2328;
+            color: white;
+            margin: 20px 40px;
+            font-size: 16px;
+            padding: 6px 7px;
+            border-radius: 10px;
+            cursor: pointer;
+
+        }
+
+        .sr:hover {
+            background: aliceblue;
+            color: black;
+            border: 2px solid black;
+
+        }
+        #submit{
+            text-decoration: none;
+        }
+
+        /* (.form-group input) for form */
+        .form-group input {
+            font-size: 21px;
+            text-align: center;
+            margin: 4px 4px;
+            padding: 0px 7px;
+            border-radius: 5px;
+            border: none;
+        }
+        .offer img{
+            height: 310px;
+            width: 289px;
+            position: absolute;
+            right: 85px;
+            top: 116px;
+        }
+        .offer div{
+            position: absolute;
+            top: 218px;
+            right: 184px;
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <!-- left box for logo -->
+        <div class="left">
+            <img src="img/logo2.jpg" alt="">
+            <div>THE FITNESS HUB</div>
+        </div>
+        <!-- mid box for navbar  -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="fitnesshub.html">Fitness Hub</a></li>
+                <li><a href="contactus.html">Contact us</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </div>
+        <!-- right box for buttons -->
+        <div class="right">
+
+            <button class="btn" title="+91 98256 85605">Call us</button>
+            <button class="btn"><a href="https://badshahkrish9022@gmail.com">Email</a></button>
+        </div>
+    </header>
+    <div class="container">
+        <h1>Join the best GYM of Surat Now!!</h1>
+        <form action="notnow.php">
+            <div class="form-group">
+                <input type="text" name="" id="" placeholder="Enter your Name">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" id="" placeholder="Enter your Gender">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" id="" placeholder="Enter your Age">
+            </div>
+            <div class="form-group">
+                <input type="number" name="" id="" placeholder="Enter your Phone no. ">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" id="" placeholder="Enter your Email ">
+            </div>
+            <div>
+                <input class="sr" type="reset"> <a id="submit" href="submit.html" input class="sr" type="submit">Submit</a>
+            </div>
+            
+        </form>
+        
+    </div>
+    <div class="offer">
+        <img src="img/offer.png" alt="">
+       <div>
+           <h3><b>Special Offer</b> </h3>
+          <p><h3> <s>&#x20b9; 12,000</s></h3>
+            <h2><b>&#x20b9; 10,000</b></h2></p> 
+       </div>
+       
+            
+       
+    </div>
+
+</body>
+
+</html>
